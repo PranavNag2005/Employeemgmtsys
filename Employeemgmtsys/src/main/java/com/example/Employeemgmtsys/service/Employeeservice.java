@@ -40,6 +40,17 @@ public class Employeeservice {
         employee.remove(index);
     }
 
+    public Employee getemployeebyid(int id) {
+        int index=0;
+        for(int i=0;i<employee.size();i++){
+            if(employee.get(i).getEid()==id){
+                index=i;
+            }
+        }
+        System.out.println(employee.get(index));
+        return employee.get(index);
+    }
+
     
    
 
